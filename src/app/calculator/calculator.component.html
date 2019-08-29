@@ -1,0 +1,11 @@
+<h1>Awesome Calculator</h1>
+<input type="number" (change)="firstNumber($event.target.value)">
+<select (change)="calculation($event.target.value)">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="x">X</option>
+  <option value="/">/</option>
+</select>
+<input type="number" (change)="lastNumber($event.target.value)">
+<input type="button" value="result" (click)="ketQua()">
+<h3>result : {{result}}</h3>
